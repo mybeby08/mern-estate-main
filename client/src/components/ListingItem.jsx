@@ -27,7 +27,9 @@ export default function ListingItem({ listing }) {
             {listing.description}
           </p>
           <p className="text-slate-500 mt-2 font-semibold ">
-            ZAR
+            <span className="bg-slate-800 rounded-xl text-white px-2 py-1">
+              ZAR
+            </span>{" "}
             {listing.offer
               ? listing.discountPrice.toLocaleString("en-US")
               : listing.regularPrice.toLocaleString("en-US")}
